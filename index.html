@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-container">
+        <div>
+          <p class="header-subtitle">Tashiev D.S.</p>
+          <p class="audio">Сперва включи трек!</p>
+          <audio controls class="audio-control">
+            <source class="audio-control" src="audio/shirokijj.mp3" />
+          </audio>
+          <p class="header-description">
+            Привет! Меня зовут Данияр. Мне 28 лет. <br />
+            Образование высшее "Экономист", <br />а также средне специальное
+            <br />"Слесарь по ремонту <i>тракторов</i>". <br />Люблю вкусный
+            рамён, походы в горы. <br />Катаюсь на велосипеде, фехтую на рапире,
+            <br />умею шевелить ушами.
+          </p>
+          <div class="social">
+            <a href="https://vk.com/tashievtt" class="kontact">VK</a>
+            <a
+              href="https://www.facebook.com/profile.php?id=100061517139476"
+              class="facebook"
+              >Facebook</a
+            >
+            <a href="https://www.instagram.com/tashievv/" class="Instagram"
+              >Instagram</a
+            >
+          </div>
+        </div>
+        <div class="header-image-wrapper">
+          <img class="header-img" src="images/foto1.png" alt="no foto" />
+        </div>
+      </div>
+    </header>
+    <main class="main-fon">
+      <div class="galery-theme">
+        <img src="images/galery.PNG" alt="no foto" />
+      </div>
+      <div class="myProducts">
+        <div class="myProducts-gallery">
+          <img
+            src="images/1.jpg"
+            alt="click here"
+            onclick="myImageFunction(this)"
+          />
+          <img
+            src="images/2.jpg"
+            alt="click here"
+            onclick="myImageFunction(this)"
+          />
+          <img
+            src="images/3.jpg"
+            alt="click here"
+            onclick="myImageFunction(this)"
+          />
+          <img
+            src="images/4.jpg"
+            alt="click here"
+            onclick="myImageFunction(this)"
+          />
+        </div>
+
+        <div class="image-container">
+          <img id="img-Box" src="images/31.jpg" alt="click here" />
+        </div>
+      </div>
+
+      <script>
+        function myImageFunction(productSmallImg) {
+          var productFullImg = document.getElementById("img-Box");
+          productFullImg.src = productSmallImg.src;
+        }
+      </script>
+    </main>
+    <footer>
+      <p class="footer-text">
+        Этот сайт был создан в снежный день 1 декабря 2022 г. в городе Бишкек во
+        время обучения в Эльбрус.
+      </p>
+    </footer>
+  </body>
+</html>
